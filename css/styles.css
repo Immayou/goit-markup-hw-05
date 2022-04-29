@@ -101,15 +101,19 @@ img {
     color: var(--accent-color);
 }
 
-.logo-primary-accent,
-.logo-secondary-accent {
+.logo-primary-accent {
     color: var(--accent-color);
-
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
 .logo-primary-accent:hover,
 .logo-primary-accent:focus {
     color: var(--logo-color);
+}
+
+.logo:hover .logo-primary-accent,
+.logo:focus .logo-primary-accent {
+    color: var(--logo-primary-color);
 }
 
 .head {
@@ -120,10 +124,10 @@ img {
 .head-item {
     color: var(--header-nav-text-color);
     transition: color 250ms cubic-bezier(0.4,0,0.2,1);
-    -webkit-transition: color 1250ms cubic-bezier(0.4,0,0.2,1);
-    -moz-transition: color 1250ms cubic-bezier(0.4,0,0.2,1);
-    -ms-transition: color 1250ms cubic-bezier(0.4,0,0.2,1);
-    -o-transition: color 1250ms cubic-bezier(0.4,0,0.2,1);
+    -webkit-transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+    -moz-transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+    -ms-transition: color 250ms cubic-bezier(0.4,0,0.2,1);
+    -o-transition: color 250ms cubic-bezier(0.4,0,0.2,1);
 }
 
 .head-item.current {
@@ -610,20 +614,22 @@ fill: #FFFFFF;
     display: block;
     
     color: var(--logo-secondary-color);
-}
-
-.logo-secondary-accent {
-    color: var(--accent-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -moz-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -ms-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    -o-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo-secondary:hover,
 .logo-secondary:focus {
     color: var(--accent-color);
+}
+
+.logo-secondary-accent {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-secondary:hover .logo-secondary-accent,
+.logo-secondary:focus .logo-secondary-accent {
+    color: var(--logo-secondary-color);
 }
 
 .footer-item-tel,
