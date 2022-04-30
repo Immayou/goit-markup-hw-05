@@ -50,7 +50,7 @@
         <!-- Герой -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения<br>для вашего бизнеса</h1>
-            <button type="button" class="hero-btn">Заказать услугу</button>
+            <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </section>
 
         <!-- Преимущества компании -->
@@ -59,7 +59,8 @@
                 <h2 class="hidden">Преимущества компании</h2>
                 <ul class="properties-list list">
                     <li class="properties-item">
-                        <a href="" class="properties-link"><svg class="properties-icon" width="70" height="70">
+                        <a href="" class="properties-link">
+                            <svg class="properties-icon" width="70" height="70">
                             <use href="./css/icons/symbol-defs.svg#icon-antenna"></use>
                             </svg></a>
                         <h3 class="properties-title">Внимание к деталям</h3>
@@ -339,11 +340,17 @@
              </div>
         </div>
     </footer>
-    <div class="backdrop"></div>
-    <div class="modal"></div>
-    <button type="button"></button>
-    <script src="./js/modal.js"></script>
-</body>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+    <button class="modal-close-btn" type="button" data-modal-close>
+        <svg class="modal-close-btn-icon" width="11" height="11">
+        <use href="./css/icons/symbol-defs.svg#icon-close-black"></use>
+        </svg>
+    </button>
+    </div>
+    </div>
+ <script src="./js/modal.js"></script>
+ </body>
 
 </html>
 
