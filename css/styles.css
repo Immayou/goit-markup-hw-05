@@ -755,12 +755,16 @@ address {
     background-color: rgba(33, 150, 243, 0.9);
     color: #FFFFFF;
     overflow: auto;
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -moz-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -ms-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     -o-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transform: translateY(101%);
+    -moz-transform: translateY(101%);
+    -ms-transform: translateY(101%);
+    -o-transform: translateY(101%);
 }
 
 .examples-link:hover .examples-top-text {
